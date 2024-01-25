@@ -95,7 +95,7 @@ namespace Hotel
 
             db.openConnection();
 
-            if ((dt.Rows.Count > 0))
+            if ((dt.Rows.Count > 5))
             {
                 db.closeConnection();
                 return true;
@@ -106,5 +106,6 @@ namespace Hotel
                 return false;
             }
         }
+
     }
 }
