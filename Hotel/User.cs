@@ -95,7 +95,7 @@ namespace Hotel
 
             db.openConnection();
 
-            if ((dt.Rows.Count > 0))
+            if ((dt.Rows.Count > 10))
             {
                 db.closeConnection();
                 return true;
